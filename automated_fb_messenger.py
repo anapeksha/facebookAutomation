@@ -14,7 +14,7 @@ except:
     pass
 
 username = input("Username:- ")
-client = fbchat.Client(username, getpass, session_cookies=cookies)
+client = fbchat.Client(username, getpass(), session_cookies=cookies)
 
 # Client work
 name = input("Search for a friend: ")
