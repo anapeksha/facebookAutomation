@@ -1,6 +1,7 @@
 import fbchat
 import json
 from getpass import getpass
+import time
 
 
 cookies = {}
@@ -21,6 +22,7 @@ friends = client.searchForUsers(name)
 friend = friends[0]
 msg = input("Type the message: ")
 sent = client.sendMessage(msg, thread_id=friend.uid)
+time.sleep(5)
 if sent:
     print("Message sent successfully!!")
 
